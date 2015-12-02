@@ -30,6 +30,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
+#  s.frameworks = 'UIKit'
+#  s.libraries = 'icucore'
 #  s.source_files = 'Pod/Classes/**/*'
 #  s.resource_bundles = {
 #    'WCoreKit' => ['Pod/Assets/*.png']
@@ -43,16 +45,16 @@ Pod::Spec.new do |s|
         wToolsKit.public_header_files = 'Pod/Classes/WToolsKit/**/*.h'
     end
 
-
-    s.subspec 'WOrmManager' do |wOrmManager|
-        wOrmManager.source_files = 'Pod/Classes/WOrmManager/**/*'
-        wOrmManager.public_header_files = 'Pod/Classes/WOrmManager/**/*.h'
-        wOrmManager.dependency 'WCoreKit/WRuntimeKit'
-    end
-
     s.subspec 'WRuntimeKit' do |wRuntimeKit|
         wRuntimeKit.source_files = 'Pod/Classes/WRuntimeKit/**/*'
         wRuntimeKit.public_header_files = 'Pod/Classes/WRuntimeKit/**/*.h'
     end
+
+    s.subspec 'WOrmManager' do |wOrmManager|
+        wOrmManager.source_files = 'Pod/Classes/WOrmManager/**/*'
+        wOrmManager.public_header_files = 'Pod/Classes/WOrmManager/**/*.h'
+        wOrmManager.dependency 'WCoreKit/WRuntimeKit'
+    end
+
 
 end
