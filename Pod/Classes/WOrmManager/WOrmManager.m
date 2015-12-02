@@ -464,15 +464,15 @@
                [propertyTypeStr isEqualToString:WPropertyTypeFloat])
     {
         key = [propertyTypeStr uppercaseString];
+    } else if ([[propertyTypeStr uppercaseString] hasSuffix:[WPropertyTypeLongLong uppercaseString]])
+    {
+        key = @"INTEGER";
     } else if ([propertyTypeStr isEqualToString:WPropertyTypeLong] || [propertyTypeStr isEqualToString:WPropertyTypeInt] || [propertyTypeStr isEqualToString:WPropertyTypeUnsignedLong] || [propertyTypeStr isEqualToString:WPropertyTypeUnsignedInt])
     {
         key = @"INTEGER";
     } else if ([[propertyTypeStr uppercaseString] isEqualToString:WPropertyTypeBOOL])
     {
         key = @"BOOLEAN";
-    } else if ([propertyTypeStr isEqualToString:WPropertyTypeLongLong])
-    {
-        key = @"INTEGER";
     }
     return key;
 }
