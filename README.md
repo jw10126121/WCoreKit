@@ -17,7 +17,7 @@ WCoreKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WCoreKit', '~> 0.1.5'
+pod 'WCoreKit', '~> 0.1.6'
 ```
 
 ## Author
