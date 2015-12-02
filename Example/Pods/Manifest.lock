@@ -1,9 +1,11 @@
 PODS:
-  - WCoreKit (0.1.0):
-    - WCoreKit/WRuntimeKit (= 0.1.0)
-    - WCoreKit/WToolsKit (= 0.1.0)
-  - WCoreKit/WRuntimeKit (0.1.0)
-  - WCoreKit/WToolsKit (0.1.0)
+  - WCoreKit (0.1.2):
+    - WCoreKit/WOrmManager (= 0.1.2)
+    - WCoreKit/WRuntimeKit (= 0.1.2)
+    - WCoreKit/WToolsKit (= 0.1.2)
+  - WCoreKit/WOrmManager (0.1.2)
+  - WCoreKit/WRuntimeKit (0.1.2)
+  - WCoreKit/WToolsKit (0.1.2)
 
 DEPENDENCIES:
   - WCoreKit (from `../`)
@@ -13,6 +15,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WCoreKit: a2f4c2a096e7c04e517fc6adc461748d928cf02b
+  WCoreKit: fe7e4448e223505bfd7ffa342a86d10016197a3d
 
 COCOAPODS: 0.39.0

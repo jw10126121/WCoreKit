@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
 
+#import "WOrmBaseModel.h"
+#import "WOrmManager.h"
+#import "WOrmProtocol.h"
 #import "NSObject+WRTObject.h"
 #import "WPropertyType.h"
 #import "WRTProperty.h"

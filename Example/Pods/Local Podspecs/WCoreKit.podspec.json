@@ -1,6 +1,6 @@
 {
   "name": "WCoreKit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "一些方便开发的IOS工具类",
   "description": "本人自己用的一些关于IOS开发的工具",
   "homepage": "https://github.com/jw10126121/WCoreKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/jw10126121/WCoreKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "7.0"
@@ -21,6 +21,11 @@
       "name": "WToolsKit",
       "source_files": "Pod/Classes/WToolsKit/**/*",
       "public_header_files": "Pod/Classes/WToolsKit/**/*.h"
+    },
+    {
+      "name": "WOrmManager",
+      "source_files": "Pod/Classes/WOrmManager/**/*",
+      "public_header_files": "Pod/Classes/WOrmManager/**/*.h"
     },
     {
       "name": "WRuntimeKit",

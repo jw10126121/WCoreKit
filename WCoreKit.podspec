@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -34,11 +34,19 @@ Pod::Spec.new do |s|
 #  s.resource_bundles = {
 #    'WCoreKit' => ['Pod/Assets/*.png']
 #  }
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 
     s.subspec 'WToolsKit' do |wToolsKit|
         wToolsKit.source_files = 'Pod/Classes/WToolsKit/**/*'
         wToolsKit.public_header_files = 'Pod/Classes/WToolsKit/**/*.h'
-# WToolsKit.dependency 'AFNetworking', '~> 2.3'
+    end
+
+
+    s.subspec 'WOrmManager' do |wOrmManager|
+        wOrmManager.source_files = 'Pod/Classes/WOrmManager/**/*'
+        wOrmManager.public_header_files = 'Pod/Classes/WOrmManager/**/*.h'
     end
 
     s.subspec 'WRuntimeKit' do |wRuntimeKit|
@@ -46,7 +54,4 @@ Pod::Spec.new do |s|
         wRuntimeKit.public_header_files = 'Pod/Classes/WRuntimeKit/**/*.h'
     end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
