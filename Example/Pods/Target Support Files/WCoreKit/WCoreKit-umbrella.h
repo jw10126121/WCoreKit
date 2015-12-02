@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
 
+#import "NSObject+WRTObject.h"
+#import "WPropertyType.h"
+#import "WRTProperty.h"
 #import "JwDefine.h"
 #import "JwSingleton.h"
 #import "JWTools.h"

@@ -21,6 +21,11 @@
       "name": "WToolsKit",
       "source_files": "Pod/Classes/WToolsKit/**/*",
       "public_header_files": "Pod/Classes/WToolsKit/**/*.h"
+    },
+    {
+      "name": "WRuntimeKit",
+      "source_files": "Pod/Classes/WRuntimeKit/**/*",
+      "public_header_files": "Pod/Classes/WRuntimeKit/**/*.h"
     }
   ]
 }
