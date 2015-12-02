@@ -1,12 +1,21 @@
 PODS:
-  - WCoreKit (0.1.4):
-    - WCoreKit/WOrmManager (= 0.1.4)
-    - WCoreKit/WRuntimeKit (= 0.1.4)
-    - WCoreKit/WToolsKit (= 0.1.4)
-  - WCoreKit/WOrmManager (0.1.4):
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - WCoreKit (0.1.5):
+    - WCoreKit/WOrmManager (= 0.1.5)
+    - WCoreKit/WRuntimeKit (= 0.1.5)
+    - WCoreKit/WServiceForDatabase (= 0.1.5)
+    - WCoreKit/WToolsKit (= 0.1.5)
+  - WCoreKit/WOrmManager (0.1.5):
     - WCoreKit/WRuntimeKit
-  - WCoreKit/WRuntimeKit (0.1.4)
-  - WCoreKit/WToolsKit (0.1.4)
+  - WCoreKit/WRuntimeKit (0.1.5)
+  - WCoreKit/WServiceForDatabase (0.1.5):
+    - FMDB
+    - WCoreKit/WOrmManager
+  - WCoreKit/WToolsKit (0.1.5)
 
 DEPENDENCIES:
   - WCoreKit (from `../`)
@@ -16,6 +25,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WCoreKit: 6db2230b5f30ca08b7e4258af75bf7bfcf18dd21
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  WCoreKit: bc59f183c3fcbd8bd3ce71c5b60b299dbfb04f4b
 
 COCOAPODS: 0.39.0

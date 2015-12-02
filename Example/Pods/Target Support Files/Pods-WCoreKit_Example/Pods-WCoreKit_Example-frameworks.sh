@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-WCoreKit_Example/FMDB.framework"
   install_framework "Pods-WCoreKit_Example/WCoreKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-WCoreKit_Example/FMDB.framework"
   install_framework "Pods-WCoreKit_Example/WCoreKit.framework"
 fi

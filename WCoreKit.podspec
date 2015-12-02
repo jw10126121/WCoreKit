@@ -56,5 +56,11 @@ Pod::Spec.new do |s|
         wOrmManager.dependency 'WCoreKit/WRuntimeKit'
     end
 
+    s.subspec 'WServiceForDatabase' do |wServiceForDatabase|
+        wServiceForDatabase.source_files = 'Pod/Classes/WOrmManager/**/*'
+        wServiceForDatabase.public_header_files = 'Pod/Classes/WOrmManager/**/*.h'
+        wServiceForDatabase.dependency 'WCoreKit/WOrmManager'
+        wServiceForDatabase.dependency 'FMDB'
+    end
 
 end
