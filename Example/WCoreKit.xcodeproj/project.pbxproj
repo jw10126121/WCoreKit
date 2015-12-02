@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		93FAFBA476F2E845CF108CDC /* Pods_WCoreKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC850BECA43461AF8C6CA6C9 /* Pods_WCoreKit_Tests.framework */; };
+		DB67A4A51C0F100F00FD485C /* UserLocationMdl.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67A4A41C0F100F00FD485C /* UserLocationMdl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		B31CF3755A1E8CE0C1697FA0 /* Pods-WCoreKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCoreKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCoreKit_Example/Pods-WCoreKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BC850BECA43461AF8C6CA6C9 /* Pods_WCoreKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCoreKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D852901D1CD8740B9F391952 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DB67A4A31C0F100F00FD485C /* UserLocationMdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationMdl.h; sourceTree = "<group>"; };
+		DB67A4A41C0F100F00FD485C /* UserLocationMdl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationMdl.m; sourceTree = "<group>"; };
 		F2D9CE15E2FF29B172CDEC9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +133,8 @@
 		6003F593195388D20070C39A /* Example for WCoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				DB67A4A31C0F100F00FD485C /* UserLocationMdl.h */,
+				DB67A4A41C0F100F00FD485C /* UserLocationMdl.m */,
 				6003F59C195388D20070C39A /* WAppDelegate.h */,
 				6003F59D195388D20070C39A /* WAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -391,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* WAppDelegate.m in Sources */,
+				DB67A4A51C0F100F00FD485C /* UserLocationMdl.m in Sources */,
 				6003F5A7195388D20070C39A /* WViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

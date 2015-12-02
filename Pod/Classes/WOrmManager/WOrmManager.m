@@ -470,7 +470,7 @@
     } else if ([[propertyTypeStr uppercaseString] isEqualToString:WPropertyTypeBOOL])
     {
         key = @"BOOLEAN";
-    } else if ([[propertyTypeStr uppercaseString] isEqualToString:WPropertyTypeLongLong])
+    } else if ([propertyTypeStr isEqualToString:WPropertyTypeLongLong])
     {
         key = @"INTEGER";
     }

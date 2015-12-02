@@ -7,12 +7,18 @@
 //
 
 #import "WAppDelegate.h"
+#import "UserLocationMdl.h"
+#import "WServiceForDatabase.h"
 
 @implementation WAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSString * SQL = [UserLocationMdl wSqlForCreateTable];
+    NSLog(@"%@",SQL);
+    
     return YES;
 }
 

@@ -7,79 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02947D6BD31008CB8C1C5B24ABA0D1D9 /* UIScrollView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3630418AC3A02D3C9ECFECD8212B8999 /* UIScrollView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026E685CE8F3097533954A6875590659 /* NSNull+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 29814EB790A30D6CE6F97A68A8DB0EF3 /* NSNull+WTool.m */; };
+		037E9E9FA1192DCD88DEC5618B3F9189 /* NSArray+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD79EE3B6A0EA22A4023BE43C4EC /* NSArray+WTool.m */; };
 		06A539792AFEC5B359D8DC678B383253 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71734723991B81CE633402E01C09CA0 /* Foundation.framework */; };
+		0B0315695A2467FB659C2D19D027B128 /* UIScrollView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC64DF2A6C22A4FCF207440F816F1 /* UIScrollView+WTool.m */; };
+		0BD9154302E78B7C6FE292A44F913A34 /* UIActionSheet+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB695F104FB223A0543A0A4495265818 /* UIActionSheet+WTool.m */; };
+		0D2978C674AFA289146AD5B81CB83E6C /* WJsonTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B018593ADC391DAF8FF0D1867EC0B5AA /* WJsonTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D319D964B4AC1193A5CE292DB86334A /* UIView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9913A75937AE2408EAB195B2372A22 /* UIView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D619A711F71058C9238B17E9AF48AFC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5569C04A4F6DB7A53A3E685DAB194017 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		12625D7B20DA6EA772D6BDD2488E74F9 /* UITableView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB717692FC87699A0A00AE16142589 /* UITableView+WTool.m */; };
+		0FE2AACE0BE9B12A43CA60754A8C4FA0 /* UIControl+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B72D91D3E4E893199B98F2ACA00B0E08 /* UIControl+WTool.m */; };
+		159C882B6D1492DCFDB67CC5241AC8D6 /* WRTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4092E9F48070ABB91607C67CDB534170 /* WRTProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		159DE0890B1201A1AD6D339ECC2D3679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71734723991B81CE633402E01C09CA0 /* Foundation.framework */; };
-		15F5C1F08ECD6C2C77DB8B095F13CF6C /* UIImage+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AC2E58DF63481A782B7D82F7213D6 /* UIImage+WTool.m */; };
-		168A13CD7A04FA62CD7E0C2ACFACB2F1 /* NSNull+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 29814EB790A30D6CE6F97A68A8DB0EF3 /* NSNull+WTool.m */; };
+		17C9BC79CCFE01853270C020E2574C9D /* WOrmManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 626372ED1DCF9AE26EA7442D642C5B8F /* WOrmManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183A0D8AF38E0EE20E47F1FEF9B37327 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6042B8CCB3FFCBF06E9A5AA0F588B1 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FE7F4DD5687A6A0F829C0E1D7717E66 /* UIControl+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B9E2220FBB3DE7EE646009723467DD /* UIControl+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		189E1B93816C4CC651CC8DFB7EB41421 /* UIViewController+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D880BC91772267799D8D92A5F9E49 /* UIViewController+WTool.m */; };
+		19D2F56A5CBF036B09A182483790A7FA /* NSNull+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA9A848B0C782C0586BEF6051692154 /* NSNull+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A88C2518EAD2A328179FFA59DA65D33 /* UIButton+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BF22BEE01ED1A918E6D8D54EC9CE88BB /* UIButton+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		210C361B105C4E4AF941E1D2BFFCAD6A /* NSArray+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D043D772492404B6521A093A2D79134C /* NSArray+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B4395DBAD799B9913931CC646E522AD /* WCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC25ADCF00F674C1F4BB89FC3412A2 /* WCoreKit-dummy.m */; };
 		3121CA80CA05A4C88FD345D4882E2AEF /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */; };
-		3529A466828A10277BB88486FAD808EA /* NSMutableAttributedString+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CA58A815298EDF75DE3E4C935B6985A8 /* NSMutableAttributedString+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BF1CF7D88254172EFCEAF6833F51123 /* NSObject+WRTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA2AF406B72328760F45698DB3AFF /* NSObject+WRTObject.m */; };
+		31C4890B070D23A75BFBD5A9528496F0 /* UIViewController+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 500461F001EC34698D996E676EF3CA45 /* UIViewController+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32A851972A4E307689DD5CFEC5E74DE9 /* UIScrollView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3630418AC3A02D3C9ECFECD8212B8999 /* UIScrollView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362799C3730AF0B0FB092A9A98AFC50F /* WOrmBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A1D5144704B92D8394898A337EB89 /* WOrmBaseModel.m */; };
+		3888BE8B0BAAF23DCDD68D348935D31A /* UIButton+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EB9C525537AAAA5C9B0C78E486C1C /* UIButton+WTool.m */; };
+		38CC6F0955AC938863F1BECD83E35ABF /* UIColor+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C1552063AB41F6F25B72170CFE6FD04F /* UIColor+WTool.m */; };
+		39FBD0382705CBB55E973917E6B20CB1 /* WCoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA6EEA8A21C772E2DBD262C4574C99 /* WCoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFC9622D8FAD84087DE6C409DDD8B35 /* WServiceForDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C47E325BBE12C3A465A5DB9A6CE0E9A8 /* WServiceForDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3ECC23FFAE400A6B2658AAF2990D83BE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 730FE4F6AA2A3F8FDF07E2DA5C993A55 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F61BE79D4B46C119C136EDE960CE78C /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 996D662C6E55B8295F8D3AA6B5BF7CC2 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FF7B604F9A188FD20BB12C7AF760DAA /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E959991F6C217BFA7000E8D127318A5 /* WFileManager.m */; };
-		418ED0BE216A03F0DE845D318F56D19A /* UIColor+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3046D36B8375D5FA20B7ED3535AD8A5D /* UIColor+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4319EBCFF37344361211D274C490E703 /* WJsonTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B018593ADC391DAF8FF0D1867EC0B5AA /* WJsonTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43A9CBB21D18AEB2B1F0F4FF9DE0C78E /* WRTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB09DED25D5B2807E38B81AC19F42C3 /* WRTProperty.m */; };
+		439B0E573368D8C25B920BA4069AF89C /* NSDate+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E761961DC18A75E7CEB1189AAB6E73B /* NSDate+WTool.m */; };
 		4B691B69F05BE304946F3EF519F0AADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71734723991B81CE633402E01C09CA0 /* Foundation.framework */; };
-		4D4F9119E91792D0B2B67E0BBCDEF2AF /* UIButton+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EB9C525537AAAA5C9B0C78E486C1C /* UIButton+WTool.m */; };
-		4E732FBE64C7F61F810564365C71E5B7 /* UIImage+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA1FB612AEF6B9FAA3129DF4D85D29F /* UIImage+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EBA5DE4D461211448890AD879F7ACB4 /* UITableViewCell+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC89203A414E10B63F3FA3C0CCC3BA3 /* UITableViewCell+WTool.m */; };
-		513E5552DB8DCA6EC3E7C7A8B268F022 /* NSDate+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E761961DC18A75E7CEB1189AAB6E73B /* NSDate+WTool.m */; };
-		5338073A6249F235CAD2122800278B20 /* WOrmProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 61993073258835867AEEF98319659E90 /* WOrmProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55BB96FE293F7AD4713C2F56487428BB /* UIViewController+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 500461F001EC34698D996E676EF3CA45 /* UIViewController+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56BD0FDCFC3A6384B7A9DAE112D5FA0C /* WTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 291C1CE477EE3A5FCD5F7EAB0E717C31 /* WTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		617208BDB37E0CC4177187041D9081B1 /* WCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC25ADCF00F674C1F4BB89FC3412A2 /* WCoreKit-dummy.m */; };
-		69BE05D118B0BDBADD728EB4DA6F2F89 /* WPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C88113041100FE1EAF976A15BC82A1 /* WPropertyType.m */; };
+		555640FCBA48AA69169F25943FB23239 /* UIView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5259E0EB6194BD98B128C6A9E91AB /* UIView+WTool.m */; };
+		64951AD993C1094592A83AED9926B030 /* WFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E959991F6C217BFA7000E8D127318A5 /* WFileManager.m */; };
+		694E046B01D91FE2321C25468C0150A9 /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7B4A180B4E4A9502726FF2A2C600D3 /* WFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A8E6B712B73922694B2727B4432A8C7 /* Pods-WCoreKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A75A83D9DD04DD6973DC368DB93A93F /* Pods-WCoreKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C63E2BEBE2BC08BD46F6A91D0A08143 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = E337B71E23A1742E1F9E84F38AC2D868 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF051CA5D4F60993FED6A6CBC37EA37 /* UITableView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAB717692FC87699A0A00AE16142589 /* UITableView+WTool.m */; };
 		74695802583BDB0C0818AC1B97F63815 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E723C1FF7E91BA5FF3A473DB94D8353E /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74945AA452AA29C4252C38BD8BABE7D9 /* UIButton+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BF22BEE01ED1A918E6D8D54EC9CE88BB /* UIButton+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7AD6E22F1417FBE155E5D0F524B3ED0B /* WOrmManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 626372ED1DCF9AE26EA7442D642C5B8F /* WOrmManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C818AE74E830311E61FF1A7E42D0713 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 678A6AC456A1999B6F02F522E8C23E1E /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7DFA88C815E3AD21D1F6553DD28FEEFA /* UIActionSheet+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB695F104FB223A0543A0A4495265818 /* UIActionSheet+WTool.m */; };
-		88BBB1A77C77CB70A837EDB3BA8D10D7 /* WOrmBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A1D5144704B92D8394898A337EB89 /* WOrmBaseModel.m */; };
-		8ABBD24777262ADDA6C92E8B3885A30F /* JWTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE24699151CF67288CF06980A2BA9A /* JWTools.m */; };
-		8C4AC3148D1860A892E7183C7ACB1124 /* NSString+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AABB05D1715440C6D62B9132C02F2FA /* NSString+WTool.m */; };
-		95D0ADFFCF3B5FAE1955CAB175011213 /* WJsonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F68A7ADE8343CC58220C03C3A58EFFD /* WJsonTool.m */; };
-		9607C70DD8053A9AAA11502B538B01C2 /* UIAlertView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F276461764F7CFFD0A9C0B15BA9FC798 /* UIAlertView+WTool.m */; };
-		9789CF4F5BCA8A402D27DF4B3692B92D /* NSObject+WRTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D1401A6ABEE04C73ECFB79443B5DC50 /* NSObject+WRTObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A7305EA235F6900C17C2C9ED604E107 /* UIView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9913A75937AE2408EAB195B2372A22 /* UIView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2BCB137E17678A1304C179C2DA31DD0 /* NSString+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A9C24520D1E0B4171F81F39F3D75ED /* NSString+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A58763675D36EBAB77022C1C35DE0CA7 /* WOrmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F63A254BB42C184A02ECB2AA00132 /* WOrmManager.m */; };
-		A672040356FD83F973DAFA85DB863CA0 /* WRTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4092E9F48070ABB91607C67CDB534170 /* WRTProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA2AFF3405077F8C56492167E6F9B9C8 /* WFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7B4A180B4E4A9502726FF2A2C600D3 /* WFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC435AB0C5DFCCDFAEEDF7A71DB9EEEA /* UITableView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AD8ACB6B617B98FDA7E209D5AC38E /* UITableView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9051AA9CAD13F93D96A631660A8ED0C0 /* UIActionSheet+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2556305F4A46DB8DC965F59F2A3770C2 /* UIActionSheet+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94BB8AFEB691C71EE97E4CDE550BFF7D /* UITableView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 300AD8ACB6B617B98FDA7E209D5AC38E /* UITableView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9647DB4668C0CA556DF86B75E6D26095 /* NSMutableAttributedString+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C0F7741B8637F70D107749BEE3848 /* NSMutableAttributedString+WTool.m */; };
+		988436185ED32A466315A808B7E2806D /* NSObject+WRTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA2AF406B72328760F45698DB3AFF /* NSObject+WRTObject.m */; };
+		9E2C251F6F593717EC065DAB4E1FAFC1 /* UITableViewCell+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC89203A414E10B63F3FA3C0CCC3BA3 /* UITableViewCell+WTool.m */; };
+		A15876945FA6B84820895C143DDF2661 /* WJsonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F68A7ADE8343CC58220C03C3A58EFFD /* WJsonTool.m */; };
+		A2EE7BADDBCC6CFEDB4A0809CF3E0651 /* NSObject+WRTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D1401A6ABEE04C73ECFB79443B5DC50 /* NSObject+WRTObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4DA6AF362D7AFF2277F2980692111DE /* UIAlertView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F3D7AA6AC6097EF6B873C126BBF4499 /* UIAlertView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABFC92255D6C1D79DB5CC273633C5E64 /* WServiceForDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF2345AF5673D3213A451DA5315CC9 /* WServiceForDatabase.m */; };
 		AD01D434D8D120A3767270766AD30797 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E865C700958F60E341457979BDD4761F /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE81E938195F1E2DDDE2E50DFABAAF25 /* NSArray+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D043D772492404B6521A093A2D79134C /* NSArray+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1033B0CD232D7E40BF24BB0E79A87F4 /* JwDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D77120BBD9FF51C57C02E52E312548 /* JwDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6BF8AB41791FAA1035EA30A8FCAB9D1 /* UIControl+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B72D91D3E4E893199B98F2ACA00B0E08 /* UIControl+WTool.m */; };
-		B7BFB28596B3C43DFB257C41DD0DBC85 /* UIActionSheet+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2556305F4A46DB8DC965F59F2A3770C2 /* UIActionSheet+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3C04C1CAEDAB8F379A5FD984B299BA5 /* JWTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE24699151CF67288CF06980A2BA9A /* JWTools.m */; };
+		B4182555395600182CFFB03E2844B638 /* WPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C88113041100FE1EAF976A15BC82A1 /* WPropertyType.m */; };
 		BA88E88A631D6BD023521B7206CE6C25 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C1D80C66B117F5AC53F8FA95D5342E /* FMDB-dummy.m */; };
-		BABFE8AC7815217149E7440CA9FAE053 /* WOrmBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2E5AD6A2C723D22A67E41BE1EF7728 /* WOrmBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07994ABCF3034FA074A68DD249DDFC3 /* UIImage+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 205AC2E58DF63481A782B7D82F7213D6 /* UIImage+WTool.m */; };
 		C1208EE46DB935A357EC32C0CE1AAAFE /* Pods-WCoreKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1D774271B25696C2D59FD03FB05EF /* Pods-WCoreKit_Example-dummy.m */; };
-		C463B5EBADB6CAC7EC93D4F3BB0CFF21 /* UIColor+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C1552063AB41F6F25B72170CFE6FD04F /* UIColor+WTool.m */; };
+		C22B7EFD91829518680D35D91558C154 /* UIControl+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B9E2220FBB3DE7EE646009723467DD /* UIControl+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F460F2CDB120C4F0292404FA49F0B1 /* UITableViewCell+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 225D92A44F8017038E1F7AF0755DD915 /* UITableViewCell+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4CEE683B945FCD5635C119ED1AAB6DC /* UIAlertView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F276461764F7CFFD0A9C0B15BA9FC798 /* UIAlertView+WTool.m */; };
 		C8FC0929A42C36174794FE1ADFD620E3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 55252AE8E744B298FDF6EC6C04056E03 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CA0DCE682D46C689EA6C771335A7DBD9 /* UIAlertView+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F3D7AA6AC6097EF6B873C126BBF4499 /* UIAlertView+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE35D54568C6F5BF738950A9D28D91AD /* NSMutableAttributedString+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C0F7741B8637F70D107749BEE3848 /* NSMutableAttributedString+WTool.m */; };
-		CFB8AA7FB580D1F9F6937A3B0488315D /* NSNull+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA9A848B0C782C0586BEF6051692154 /* NSNull+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB4B0B5895270D86B9F79E43CFCB9C63 /* NSDate+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 508920C729D96B9A996AD386671F0784 /* NSDate+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD39E2AB89D124E07AD9083D3A2986EA /* JwDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D77120BBD9FF51C57C02E52E312548 /* JwDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFAF142D9040D2F6DA669F6F1507C6A8 /* WOrmProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 61993073258835867AEEF98319659E90 /* WOrmProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D152D2C76CBEDB6E00A86DCB128F1E4A /* JwSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEDADBCE73F88908469E4257E32646A /* JwSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3AC3FAB7858557DF274F88A2BAE6E47 /* WTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 291C1CE477EE3A5FCD5F7EAB0E717C31 /* WTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0023A6DF9E3A2C8F8F7167D55219FA8 /* NSDate+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 508920C729D96B9A996AD386671F0784 /* NSDate+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A0CD9756804FC3B19DA6498CF705F4 /* WPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AAFFD78FC6ADAF9DCF87B30EEB3B9F /* WPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E330886E0E7C450E9669C4BD025D9ABD /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA91473626B039F29A7099F4B2424EC /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3FA2380FC961716CEA3F39B25E0C688 /* UITableViewCell+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 225D92A44F8017038E1F7AF0755DD915 /* UITableViewCell+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9728784A96EB63A5D97548A83D02D21 /* JWTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7035F866D53892B72586BB7D97CFE3B7 /* JWTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB524C5C1737A6E1863C7AF994E299CF /* NSArray+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3EBD79EE3B6A0EA22A4023BE43C4EC /* NSArray+WTool.m */; };
-		EFC55A04A6FE3D565DDE15E2E9E4A2B7 /* UIView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA5259E0EB6194BD98B128C6A9E91AB /* UIView+WTool.m */; };
+		E38FAF3CED10F57556FC342A59528B34 /* UIColor+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3046D36B8375D5FA20B7ED3535AD8A5D /* UIColor+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE43291599D8FC3EA37E0C2D44AF8D0 /* NSString+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AABB05D1715440C6D62B9132C02F2FA /* NSString+WTool.m */; };
+		EF30EF72885E2498BF3E6D7987C76975 /* WOrmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F63A254BB42C184A02ECB2AA00132 /* WOrmManager.m */; };
 		F0895B2A83F948153E1E5EA38A230B66 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B3712950C6905CBA2B4C0B6C14381 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F1597FF464149110CBD69D0BD154EAE8 /* NSMutableAttributedString+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CA58A815298EDF75DE3E4C935B6985A8 /* NSMutableAttributedString+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2088CFF803697E5F94DE6F9D8B41D29 /* NSString+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A9C24520D1E0B4171F81F39F3D75ED /* NSString+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F23AE50AEB7216CEA5E52B1571090DF3 /* WOrmBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2E5AD6A2C723D22A67E41BE1EF7728 /* WOrmBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27D6E1C18371C6CAAAE2946FF3719D8 /* WRTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB09DED25D5B2807E38B81AC19F42C3 /* WRTProperty.m */; };
 		F5A0569CB70F6F37A16E32EE210D0C66 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EF9B4AC2AAD20E166BC3880C62639B /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F7A72C8C6B19C0FDD4F9B87ECBEA5EDB /* UIScrollView+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FFC64DF2A6C22A4FCF207440F816F1 /* UIScrollView+WTool.m */; };
-		F989F8964C381EBB3DE996238AACE4B6 /* WPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AAFFD78FC6ADAF9DCF87B30EEB3B9F /* WPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9FA2F36441D0A29C830155069A8AE73 /* WCoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA6EEA8A21C772E2DBD262C4574C99 /* WCoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB7A28336A0AC2C15DD30D15F7E7F78F /* JwSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEDADBCE73F88908469E4257E32646A /* JwSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF78E72675F9343440BB62C22A1F973B /* UIViewController+WTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D880BC91772267799D8D92A5F9E49 /* UIViewController+WTool.m */; };
+		F950EA78997456ECE9D51CF090486177 /* JWTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7035F866D53892B72586BB7D97CFE3B7 /* JWTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB62A7E293EF7900F28DBB547129BFC3 /* UIImage+WTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA1FB612AEF6B9FAA3129DF4D85D29F /* UIImage+WTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,7 @@
 
 /* Begin PBXFileReference section */
 		0078E8D5A781B47986A348FBCC779CF6 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EF2345AF5673D3213A451DA5315CC9 /* WServiceForDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WServiceForDatabase.m; sourceTree = "<group>"; };
 		146AFFC4D555739811308821EB6017B9 /* Pods-WCoreKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCoreKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		15C1D80C66B117F5AC53F8FA95D5342E /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		1A2E5AD6A2C723D22A67E41BE1EF7728 /* WOrmBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WOrmBaseModel.h; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 		BF9913A75937AE2408EAB195B2372A22 /* UIView+WTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+WTool.h"; sourceTree = "<group>"; };
 		C1552063AB41F6F25B72170CFE6FD04F /* UIColor+WTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WTool.m"; sourceTree = "<group>"; };
 		C42BEE4C6B2CCD21E3AC1F1662688B72 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		C47E325BBE12C3A465A5DB9A6CE0E9A8 /* WServiceForDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WServiceForDatabase.h; sourceTree = "<group>"; };
 		C4D4519F262514648472D17B303D84C2 /* Pods-WCoreKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WCoreKit_Example.modulemap"; sourceTree = "<group>"; };
 		C7B9E2220FBB3DE7EE646009723467DD /* UIControl+WTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIControl+WTool.h"; sourceTree = "<group>"; };
 		CA58A815298EDF75DE3E4C935B6985A8 /* NSMutableAttributedString+WTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+WTool.h"; sourceTree = "<group>"; };
@@ -229,14 +233,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CD69B3D36FD73821ECB3497943355FE /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				ECAE501F73F5DEAADF78346A3EA52DD4 /* WOrmManager */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		0ED136FC18C082F79918220C79CD70E7 /* WServiceForDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +255,15 @@
 				5285B276927CE56B9C20ED8956056894 /* Pod */,
 			);
 			name = WToolsKit;
+			sourceTree = "<group>";
+		};
+		24A71027CD774F9B60CF45339304D262 /* WServiceForDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				C47E325BBE12C3A465A5DB9A6CE0E9A8 /* WServiceForDatabase.h */,
+				07EF2345AF5673D3213A451DA5315CC9 /* WServiceForDatabase.m */,
+			);
+			path = WServiceForDatabase;
 			sourceTree = "<group>";
 		};
 		36E64FF75EE265425913F4F87555E050 /* WRuntimeKit */ = {
@@ -312,6 +317,14 @@
 				3A803A8D1BDD9A08BCF1294CCBE8C7F5 /* Classes */,
 			);
 			path = Pod;
+			sourceTree = "<group>";
+		};
+		4EEAC42C17EC7E7BF005B470F87C0065 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24A71027CD774F9B60CF45339304D262 /* WServiceForDatabase */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		5285B276927CE56B9C20ED8956056894 /* Pod */ = {
@@ -531,17 +544,10 @@
 			name = common;
 			sourceTree = "<group>";
 		};
-		ECAE501F73F5DEAADF78346A3EA52DD4 /* WOrmManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WOrmManager;
-			sourceTree = "<group>";
-		};
 		F702E9B767DF92D8EE3D635785513A42 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0CD69B3D36FD73821ECB3497943355FE /* Classes */,
+				4EEAC42C17EC7E7BF005B470F87C0065 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -579,39 +585,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D772D564C23F2CF47F2ABFA6FA228654 /* Headers */ = {
+		FEAD649B3FA23A89D1CA89DF3EC6BE07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1033B0CD232D7E40BF24BB0E79A87F4 /* JwDefine.h in Headers */,
-				FB7A28336A0AC2C15DD30D15F7E7F78F /* JwSingleton.h in Headers */,
-				E9728784A96EB63A5D97548A83D02D21 /* JWTools.h in Headers */,
-				AE81E938195F1E2DDDE2E50DFABAAF25 /* NSArray+WTool.h in Headers */,
-				DB4B0B5895270D86B9F79E43CFCB9C63 /* NSDate+WTool.h in Headers */,
-				3529A466828A10277BB88486FAD808EA /* NSMutableAttributedString+WTool.h in Headers */,
-				CFB8AA7FB580D1F9F6937A3B0488315D /* NSNull+WTool.h in Headers */,
-				9789CF4F5BCA8A402D27DF4B3692B92D /* NSObject+WRTObject.h in Headers */,
-				A2BCB137E17678A1304C179C2DA31DD0 /* NSString+WTool.h in Headers */,
-				B7BFB28596B3C43DFB257C41DD0DBC85 /* UIActionSheet+WTool.h in Headers */,
-				CA0DCE682D46C689EA6C771335A7DBD9 /* UIAlertView+WTool.h in Headers */,
-				74945AA452AA29C4252C38BD8BABE7D9 /* UIButton+WTool.h in Headers */,
-				418ED0BE216A03F0DE845D318F56D19A /* UIColor+WTool.h in Headers */,
-				1FE7F4DD5687A6A0F829C0E1D7717E66 /* UIControl+WTool.h in Headers */,
-				4E732FBE64C7F61F810564365C71E5B7 /* UIImage+WTool.h in Headers */,
-				02947D6BD31008CB8C1C5B24ABA0D1D9 /* UIScrollView+WTool.h in Headers */,
-				AC435AB0C5DFCCDFAEEDF7A71DB9EEEA /* UITableView+WTool.h in Headers */,
-				E3FA2380FC961716CEA3F39B25E0C688 /* UITableViewCell+WTool.h in Headers */,
-				9A7305EA235F6900C17C2C9ED604E107 /* UIView+WTool.h in Headers */,
-				55BB96FE293F7AD4713C2F56487428BB /* UIViewController+WTool.h in Headers */,
-				F9FA2F36441D0A29C830155069A8AE73 /* WCoreKit-umbrella.h in Headers */,
-				AA2AFF3405077F8C56492167E6F9B9C8 /* WFileManager.h in Headers */,
-				4319EBCFF37344361211D274C490E703 /* WJsonTool.h in Headers */,
-				BABFE8AC7815217149E7440CA9FAE053 /* WOrmBaseModel.h in Headers */,
-				7AD6E22F1417FBE155E5D0F524B3ED0B /* WOrmManager.h in Headers */,
-				5338073A6249F235CAD2122800278B20 /* WOrmProtocol.h in Headers */,
-				F989F8964C381EBB3DE996238AACE4B6 /* WPropertyType.h in Headers */,
-				A672040356FD83F973DAFA85DB863CA0 /* WRTProperty.h in Headers */,
-				56BD0FDCFC3A6384B7A9DAE112D5FA0C /* WTools.h in Headers */,
+				CD39E2AB89D124E07AD9083D3A2986EA /* JwDefine.h in Headers */,
+				D152D2C76CBEDB6E00A86DCB128F1E4A /* JwSingleton.h in Headers */,
+				F950EA78997456ECE9D51CF090486177 /* JWTools.h in Headers */,
+				210C361B105C4E4AF941E1D2BFFCAD6A /* NSArray+WTool.h in Headers */,
+				E0023A6DF9E3A2C8F8F7167D55219FA8 /* NSDate+WTool.h in Headers */,
+				F1597FF464149110CBD69D0BD154EAE8 /* NSMutableAttributedString+WTool.h in Headers */,
+				19D2F56A5CBF036B09A182483790A7FA /* NSNull+WTool.h in Headers */,
+				A2EE7BADDBCC6CFEDB4A0809CF3E0651 /* NSObject+WRTObject.h in Headers */,
+				F2088CFF803697E5F94DE6F9D8B41D29 /* NSString+WTool.h in Headers */,
+				9051AA9CAD13F93D96A631660A8ED0C0 /* UIActionSheet+WTool.h in Headers */,
+				A4DA6AF362D7AFF2277F2980692111DE /* UIAlertView+WTool.h in Headers */,
+				1A88C2518EAD2A328179FFA59DA65D33 /* UIButton+WTool.h in Headers */,
+				E38FAF3CED10F57556FC342A59528B34 /* UIColor+WTool.h in Headers */,
+				C22B7EFD91829518680D35D91558C154 /* UIControl+WTool.h in Headers */,
+				FB62A7E293EF7900F28DBB547129BFC3 /* UIImage+WTool.h in Headers */,
+				32A851972A4E307689DD5CFEC5E74DE9 /* UIScrollView+WTool.h in Headers */,
+				94BB8AFEB691C71EE97E4CDE550BFF7D /* UITableView+WTool.h in Headers */,
+				C2F460F2CDB120C4F0292404FA49F0B1 /* UITableViewCell+WTool.h in Headers */,
+				0D319D964B4AC1193A5CE292DB86334A /* UIView+WTool.h in Headers */,
+				31C4890B070D23A75BFBD5A9528496F0 /* UIViewController+WTool.h in Headers */,
+				39FBD0382705CBB55E973917E6B20CB1 /* WCoreKit-umbrella.h in Headers */,
+				694E046B01D91FE2321C25468C0150A9 /* WFileManager.h in Headers */,
+				0D2978C674AFA289146AD5B81CB83E6C /* WJsonTool.h in Headers */,
+				F23AE50AEB7216CEA5E52B1571090DF3 /* WOrmBaseModel.h in Headers */,
+				17C9BC79CCFE01853270C020E2574C9D /* WOrmManager.h in Headers */,
+				CFAF142D9040D2F6DA669F6F1507C6A8 /* WOrmProtocol.h in Headers */,
+				E2A0CD9756804FC3B19DA6498CF705F4 /* WPropertyType.h in Headers */,
+				159C882B6D1492DCFDB67CC5241AC8D6 /* WRTProperty.h in Headers */,
+				3AFC9622D8FAD84087DE6C409DDD8B35 /* WServiceForDatabase.h in Headers */,
+				D3AC3FAB7858557DF274F88A2BAE6E47 /* WTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,9 +646,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9EA2D8DD851E69D64BB38398AEECF3D /* Build configuration list for PBXNativeTarget "WCoreKit" */;
 			buildPhases = (
-				7EED34B13E245AA5D3553E10AD044BDF /* Sources */,
+				EFB1F562DB1F3C7B7AAEAE934C708E2F /* Sources */,
 				66B1583567081C5441BEE3D0C16365AE /* Frameworks */,
-				D772D564C23F2CF47F2ABFA6FA228654 /* Headers */,
+				FEAD649B3FA23A89D1CA89DF3EC6BE07 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -722,35 +729,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EED34B13E245AA5D3553E10AD044BDF /* Sources */ = {
+		EFB1F562DB1F3C7B7AAEAE934C708E2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABBD24777262ADDA6C92E8B3885A30F /* JWTools.m in Sources */,
-				EB524C5C1737A6E1863C7AF994E299CF /* NSArray+WTool.m in Sources */,
-				513E5552DB8DCA6EC3E7C7A8B268F022 /* NSDate+WTool.m in Sources */,
-				CE35D54568C6F5BF738950A9D28D91AD /* NSMutableAttributedString+WTool.m in Sources */,
-				168A13CD7A04FA62CD7E0C2ACFACB2F1 /* NSNull+WTool.m in Sources */,
-				3BF1CF7D88254172EFCEAF6833F51123 /* NSObject+WRTObject.m in Sources */,
-				8C4AC3148D1860A892E7183C7ACB1124 /* NSString+WTool.m in Sources */,
-				7DFA88C815E3AD21D1F6553DD28FEEFA /* UIActionSheet+WTool.m in Sources */,
-				9607C70DD8053A9AAA11502B538B01C2 /* UIAlertView+WTool.m in Sources */,
-				4D4F9119E91792D0B2B67E0BBCDEF2AF /* UIButton+WTool.m in Sources */,
-				C463B5EBADB6CAC7EC93D4F3BB0CFF21 /* UIColor+WTool.m in Sources */,
-				B6BF8AB41791FAA1035EA30A8FCAB9D1 /* UIControl+WTool.m in Sources */,
-				15F5C1F08ECD6C2C77DB8B095F13CF6C /* UIImage+WTool.m in Sources */,
-				F7A72C8C6B19C0FDD4F9B87ECBEA5EDB /* UIScrollView+WTool.m in Sources */,
-				12625D7B20DA6EA772D6BDD2488E74F9 /* UITableView+WTool.m in Sources */,
-				4EBA5DE4D461211448890AD879F7ACB4 /* UITableViewCell+WTool.m in Sources */,
-				EFC55A04A6FE3D565DDE15E2E9E4A2B7 /* UIView+WTool.m in Sources */,
-				FF78E72675F9343440BB62C22A1F973B /* UIViewController+WTool.m in Sources */,
-				617208BDB37E0CC4177187041D9081B1 /* WCoreKit-dummy.m in Sources */,
-				3FF7B604F9A188FD20BB12C7AF760DAA /* WFileManager.m in Sources */,
-				95D0ADFFCF3B5FAE1955CAB175011213 /* WJsonTool.m in Sources */,
-				88BBB1A77C77CB70A837EDB3BA8D10D7 /* WOrmBaseModel.m in Sources */,
-				A58763675D36EBAB77022C1C35DE0CA7 /* WOrmManager.m in Sources */,
-				69BE05D118B0BDBADD728EB4DA6F2F89 /* WPropertyType.m in Sources */,
-				43A9CBB21D18AEB2B1F0F4FF9DE0C78E /* WRTProperty.m in Sources */,
+				B3C04C1CAEDAB8F379A5FD984B299BA5 /* JWTools.m in Sources */,
+				037E9E9FA1192DCD88DEC5618B3F9189 /* NSArray+WTool.m in Sources */,
+				439B0E573368D8C25B920BA4069AF89C /* NSDate+WTool.m in Sources */,
+				9647DB4668C0CA556DF86B75E6D26095 /* NSMutableAttributedString+WTool.m in Sources */,
+				026E685CE8F3097533954A6875590659 /* NSNull+WTool.m in Sources */,
+				988436185ED32A466315A808B7E2806D /* NSObject+WRTObject.m in Sources */,
+				EBE43291599D8FC3EA37E0C2D44AF8D0 /* NSString+WTool.m in Sources */,
+				0BD9154302E78B7C6FE292A44F913A34 /* UIActionSheet+WTool.m in Sources */,
+				C4CEE683B945FCD5635C119ED1AAB6DC /* UIAlertView+WTool.m in Sources */,
+				3888BE8B0BAAF23DCDD68D348935D31A /* UIButton+WTool.m in Sources */,
+				38CC6F0955AC938863F1BECD83E35ABF /* UIColor+WTool.m in Sources */,
+				0FE2AACE0BE9B12A43CA60754A8C4FA0 /* UIControl+WTool.m in Sources */,
+				C07994ABCF3034FA074A68DD249DDFC3 /* UIImage+WTool.m in Sources */,
+				0B0315695A2467FB659C2D19D027B128 /* UIScrollView+WTool.m in Sources */,
+				6DF051CA5D4F60993FED6A6CBC37EA37 /* UITableView+WTool.m in Sources */,
+				9E2C251F6F593717EC065DAB4E1FAFC1 /* UITableViewCell+WTool.m in Sources */,
+				555640FCBA48AA69169F25943FB23239 /* UIView+WTool.m in Sources */,
+				189E1B93816C4CC651CC8DFB7EB41421 /* UIViewController+WTool.m in Sources */,
+				2B4395DBAD799B9913931CC646E522AD /* WCoreKit-dummy.m in Sources */,
+				64951AD993C1094592A83AED9926B030 /* WFileManager.m in Sources */,
+				A15876945FA6B84820895C143DDF2661 /* WJsonTool.m in Sources */,
+				362799C3730AF0B0FB092A9A98AFC50F /* WOrmBaseModel.m in Sources */,
+				EF30EF72885E2498BF3E6D7987C76975 /* WOrmManager.m in Sources */,
+				B4182555395600182CFFB03E2844B638 /* WPropertyType.m in Sources */,
+				F27D6E1C18371C6CAAAE2946FF3719D8 /* WRTProperty.m in Sources */,
+				ABFC92255D6C1D79DB5CC273633C5E64 /* WServiceForDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
