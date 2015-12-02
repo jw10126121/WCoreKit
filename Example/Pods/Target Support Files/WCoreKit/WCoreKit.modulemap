@@ -1,0 +1,6 @@
+framework module WCoreKit {
+  umbrella header "WCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

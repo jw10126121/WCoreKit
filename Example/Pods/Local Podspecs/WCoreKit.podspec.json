@@ -1,0 +1,25 @@
+{
+  "name": "WCoreKit",
+  "version": "0.1.0",
+  "summary": "A short description of WCoreKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WCoreKit",
+  "license": "MIT",
+  "authors": {
+    "linjiawei": "10126121@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WCoreKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "WCoreKit": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
