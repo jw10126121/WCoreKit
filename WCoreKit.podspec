@@ -20,20 +20,31 @@ Pod::Spec.new do |s|
                        本人自己用的一些关于IOS开发的工具
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/WCoreKit"
+  s.homepage         = "https://github.com/jw10126121/WCoreKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "linjiawei" => "10126121@qq.com" }
-  s.source           = { :git => "https://github.com/jw10126121/WCoreKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/jw10126121/WCoreKit.git", :tag => "0.1.0" } #s.version.to_s
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'WCoreKit' => ['Pod/Assets/*.png']
-  }
+#  s.source_files = 'Pod/Classes/**/*'
+#  s.resource_bundles = {
+#    'WCoreKit' => ['Pod/Assets/*.png']
+#  }
+
+    s.subspec 'WToolsKit' do |wToolsKit|
+        wToolsKit.source_files = 'Pod/Classes/WToolsKit/**/*'
+        wToolsKit.public_header_files = 'Pod/Classes/WToolsKit/**/*.h'
+# WToolsKit.dependency 'AFNetworking', '~> 2.3'
+    end
+
+#    s.subspec 'WRuntimeKit' do |wRuntimeKit|
+#        wRuntimeKit.source_files = 'Pod/Classes/WRuntimeKit/**/*'
+#        wRuntimeKit.public_header_files = 'Pod/Classes/WRuntimeKit/**/*.h'
+#    end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A6DC28B0D7B28D2CD75F4B1D'
+               BlueprintIdentifier = '1E1C10CFAEC12F0A23588024'
                BlueprintName = 'WCoreKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WCoreKit.framework'>

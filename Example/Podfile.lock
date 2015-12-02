@@ -4,7 +4,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - WCoreKit (0.1.0)
+  - WCoreKit (0.1.0):
+    - WCoreKit/WRuntimeKit (= 0.1.0)
+    - WCoreKit/WToolsKit (= 0.1.0)
+  - WCoreKit/WRuntimeKit (0.1.0)
+  - WCoreKit/WToolsKit (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,6 +20,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  WCoreKit: c003842cd044b086992e59322e98db83d549fb70
+  WCoreKit: 428ca973e81e346ceba62e8dce04a3c9b51a259f
 
 COCOAPODS: 0.39.0
