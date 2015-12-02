@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -47,6 +47,7 @@ Pod::Spec.new do |s|
     s.subspec 'WOrmManager' do |wOrmManager|
         wOrmManager.source_files = 'Pod/Classes/WOrmManager/**/*'
         wOrmManager.public_header_files = 'Pod/Classes/WOrmManager/**/*.h'
+        wOrmManager.dependency 'WCoreKit/WRuntimeKit'
     end
 
     s.subspec 'WRuntimeKit' do |wRuntimeKit|
