@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, WAlertActionStyle) {
     WAlertActionStyleDefault = 0,
     WAlertActionStyleCancel,
@@ -29,3 +29,4 @@ typedef NS_ENUM(NSInteger, WAlertActionStyle) {
 
 
 @end
+NS_ASSUME_NONNULL_END
