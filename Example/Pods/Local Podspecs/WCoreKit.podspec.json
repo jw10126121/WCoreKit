@@ -49,6 +49,11 @@
 
         ]
       }
+    },
+    {
+      "name": "WAlertController",
+      "source_files": "Classes/WAlertController/**/*",
+      "public_header_files": "Classes/WAlertController/**/*.h"
     }
   ]
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.1.6"
+  s.version          = "0.1.7"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -63,4 +63,12 @@ Pod::Spec.new do |s|
         wServiceForDatabase.dependency 'FMDB'
     end
 
+    s.subspec 'WAlertController' do |sp|
+        sp.source_files = 'Pod/Classes/WAlertController/**/*'
+        sp.public_header_files = 'Pod/Classes/WAlertController/**/*.h'
+    end
 end
+
+
+
+
