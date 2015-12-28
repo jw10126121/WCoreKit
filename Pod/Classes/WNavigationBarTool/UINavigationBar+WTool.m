@@ -58,11 +58,12 @@ const char * overlayKey = "__UINavigationBarOverlayKey__";
 }
 
 
+/*
 -(void)layoutSubviews {
     [super layoutSubviews];
      self.overlayView.frame = CGRectMake(0, -20, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + 20);
-    
 }
+*/
 
 
 

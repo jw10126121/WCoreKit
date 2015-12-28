@@ -4,22 +4,22 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
-  - WCoreKit (0.2.0):
-    - WCoreKit/WAlertController (= 0.2.0)
-    - WCoreKit/WNavigationBarTool (= 0.2.0)
-    - WCoreKit/WOrmManager (= 0.2.0)
-    - WCoreKit/WRuntimeKit (= 0.2.0)
-    - WCoreKit/WServiceForDatabase (= 0.2.0)
-    - WCoreKit/WToolsKit (= 0.2.0)
-  - WCoreKit/WAlertController (0.2.0)
-  - WCoreKit/WNavigationBarTool (0.2.0)
-  - WCoreKit/WOrmManager (0.2.0):
+  - WCoreKit (0.2.1):
+    - WCoreKit/WAlertController (= 0.2.1)
+    - WCoreKit/WNavigationBarTool (= 0.2.1)
+    - WCoreKit/WOrmManager (= 0.2.1)
+    - WCoreKit/WRuntimeKit (= 0.2.1)
+    - WCoreKit/WServiceForDatabase (= 0.2.1)
+    - WCoreKit/WToolsKit (= 0.2.1)
+  - WCoreKit/WAlertController (0.2.1)
+  - WCoreKit/WNavigationBarTool (0.2.1)
+  - WCoreKit/WOrmManager (0.2.1):
     - WCoreKit/WRuntimeKit
-  - WCoreKit/WRuntimeKit (0.2.0)
-  - WCoreKit/WServiceForDatabase (0.2.0):
+  - WCoreKit/WRuntimeKit (0.2.1)
+  - WCoreKit/WServiceForDatabase (0.2.1):
     - FMDB
     - WCoreKit/WOrmManager
-  - WCoreKit/WToolsKit (0.2.0)
+  - WCoreKit/WToolsKit (0.2.1)
 
 DEPENDENCIES:
   - WCoreKit (from `../`)
@@ -30,6 +30,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  WCoreKit: 496f746d0d7906d4590246b93fdc84c61634e96a
+  WCoreKit: 6265059a5c84dd5f2405838b9c80a0f3dc0950bc
 
 COCOAPODS: 0.39.0
