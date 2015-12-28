@@ -54,6 +54,11 @@
       "name": "WAlertController",
       "source_files": "Pod/Classes/WAlertController/**/*",
       "public_header_files": "Pod/Classes/WAlertController/**/*.h"
+    },
+    {
+      "name": "WNavigationBarTool",
+      "source_files": "Pod/Classes/WNavigationBarTool/**/*",
+      "public_header_files": "Pod/Classes/WNavigationBarTool/**/*.h"
     }
   ]
 }

@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/WNavigationBarTool/UINavigationBar+WTool.h

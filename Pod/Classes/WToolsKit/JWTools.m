@@ -95,10 +95,10 @@ CGSize wScreenSize()  //屏幕宽高(相对于当前屏幕旋转方式)
     CGSize theSize = [UIScreen mainScreen].bounds.size;
     if (!UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) || [[UIDevice currentDevice] systemVersion].floatValue >= 8.0)
     {
-        theSize = (CGSize){[UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height};
+        theSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     }else
     {
-        theSize = (CGSize){[UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width};
+        theSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
     }
     return theSize;
 }
