@@ -32,7 +32,7 @@ const char * overlayKey = "__UINavigationBarOverlayKey__";
  *
  *  @param backgroundColor 背景色
  */
-- (void)wSetBackgroundColor:(UIColor *)backgroundColor
+- (void)wSetNavBackgroundColor:(UIColor *)backgroundColor
 {
     if (!self.overlayView) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];

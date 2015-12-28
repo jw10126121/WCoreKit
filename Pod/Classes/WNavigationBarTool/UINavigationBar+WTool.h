@@ -18,7 +18,7 @@
  *
  *  @param backgroundColor 背景色
  */
-- (void)wSetBackgroundColor:(UIColor *)backgroundColor;
+- (void)wSetNavBackgroundColor:(UIColor *)backgroundColor;
 
 /**
  *  @author Linjw
