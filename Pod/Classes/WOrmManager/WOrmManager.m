@@ -152,7 +152,6 @@
         
         //基本数据类型与Null
         if (valueFromDic == [NSNull null] ||
-            [propertyType isEqualToString:NSStringFromClass([NSString class])] ||
             [propertyType isEqualToString:NSStringFromClass([NSNumber class])] ||
             [propertyType isEqualToString:WPropertyTypeInt] ||
             [propertyType isEqualToString:WPropertyTypeLong] ||
@@ -163,6 +162,7 @@
             [propertyType isEqualToString:WPropertyTypeFloat] ||
             [propertyType isEqualToString:WPropertyTypeDouble] )
         {
+            
             [aWmodel setValue:valueFromDic forKey:propertyName];
         }
         //日期
@@ -298,6 +298,10 @@
         //Null
         else if (valueFromDic == [NSNull null]){
             [aWmodel setValue:[NSNull null] forKey:propertyName];
+        }
+        else if ([propertyType isEqualToString:NSStringFromClass([NSString class])])
+        {
+            [aWmodel setValue:[NSString stringWithFormat:@"%@",valueFromDic?:@""] forKey:propertyName];
         }
         else{
             if (valueFromDic && valueFromDic != [NSNull null]) {

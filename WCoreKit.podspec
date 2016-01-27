@@ -63,10 +63,10 @@ Pod::Spec.new do |s|
         wServiceForDatabase.dependency 'FMDB'
     end
 
-    s.subspec 'WAlertController' do |sp|
-        sp.source_files = 'Pod/Classes/WAlertController/**/*'
-        sp.public_header_files = 'Pod/Classes/WAlertController/**/*.h'
-    end
+#    s.subspec 'WAlertController' do |sp|
+#        sp.source_files = 'Pod/Classes/WAlertController/**/*'
+#        sp.public_header_files = 'Pod/Classes/WAlertController/**/*.h'
+#    end
 
     s.subspec 'WNavigationBarTool' do |sp|
         sp.source_files = 'Pod/Classes/WNavigationBarTool/**/*'
