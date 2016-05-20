@@ -1,6 +1,6 @@
 {
   "name": "WCoreKit",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "一些方便开发的IOS工具类",
   "description": "本人自己用的一些关于IOS开发的工具",
   "homepage": "https://github.com/jw10126121/WCoreKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/jw10126121/WCoreKit.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "7.0"
@@ -51,14 +51,19 @@
       }
     },
     {
-      "name": "WAlertController",
-      "source_files": "Pod/Classes/WAlertController/**/*",
-      "public_header_files": "Pod/Classes/WAlertController/**/*.h"
-    },
-    {
       "name": "WNavigationBarTool",
       "source_files": "Pod/Classes/WNavigationBarTool/**/*",
       "public_header_files": "Pod/Classes/WNavigationBarTool/**/*.h"
+    },
+    {
+      "name": "WImageBannerView",
+      "source_files": "Pod/Classes/WImageBannerView/**/*",
+      "public_header_files": "Pod/Classes/WImageBannerView/**/*.h",
+      "dependencies": {
+        "SDWebImage": [
+
+        ]
+      }
     }
   ]
 }

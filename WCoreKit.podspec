@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.2.2"
+  s.version          = "0.2.3"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -73,7 +73,11 @@ Pod::Spec.new do |s|
         sp.public_header_files = 'Pod/Classes/WNavigationBarTool/**/*.h'
     end
 
-
+s.subspec 'WImageBannerView' do |sp|
+sp.source_files = 'Pod/Classes/WImageBannerView/**/*'
+sp.public_header_files = 'Pod/Classes/WImageBannerView/**/*.h'
+sp.dependency 'SDWebImage'
+end
 
 
 end

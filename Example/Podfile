@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+#use_frameworks!
 
-target 'WCoreKit_Example', :exclusive => true do
+target 'WCoreKit_Example' do
   pod "WCoreKit", :path => "../"
 end
 
