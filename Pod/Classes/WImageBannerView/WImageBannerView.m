@@ -89,7 +89,7 @@
     [super layoutSubviews];
     
     self.showSV.frame = self.bounds;
-    CGSize svSize = self.showSV.frame.size;
+//    CGSize svSize = self.showSV.frame.size;
     //    for (NSInteger i = 0; i < self.imgVs.count; i ++)
     //    {
     //        self.imgVs[i].frame = (CGRect){i * svSize.width,0,svSize};

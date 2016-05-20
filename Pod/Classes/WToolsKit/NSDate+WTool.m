@@ -68,7 +68,7 @@
 -(WDayOfWeekType)weekday
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *weekdayComponents = [calendar components:(NSWeekdayCalendarUnit) fromDate:self];
+    NSDateComponents *weekdayComponents = [calendar components:(NSCalendarUnitWeekday) fromDate:self];
     return (WDayOfWeekType)[weekdayComponents weekday];
 }
 
@@ -396,7 +396,7 @@
     
     // Get the weekday component of the current date
     
-    NSDateComponents *weekdayComponents = [calendar components:NSWeekdayCalendarUnit fromDate:self];
+    NSDateComponents *weekdayComponents = [calendar components:NSCalendarUnitWeekday fromDate:self];
     
     NSDateComponents *componentsToAdd = [[NSDateComponents alloc] init];
     
@@ -486,7 +486,7 @@
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     // Get the weekday component of the current date
-    // NSDateComponents *weekdayComponents = [calendar components:NSWeekdayCalendarUnit fromDate:self];
+    // NSDateComponents *weekdayComponents = [calendar components:NSCalendarUnitWeekday fromDate:self];
     
     NSDateComponents *componentsToAdd = [[NSDateComponents alloc] init];
     // to get the end of week for a particular date, add (7 - weekday) days
@@ -527,7 +527,7 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *beginningOfWeek = nil;
     
-    BOOL ok = [calendar rangeOfUnit:NSWeekCalendarUnit startDate:&beginningOfWeek
+    BOOL ok = [calendar rangeOfUnit:NSCalendarUnitWeekOfYear startDate:&beginningOfWeek
                            interval:NULL forDate:self];
     
     if (ok) {
@@ -536,7 +536,7 @@
     
     // couldn't calc via range, so try to grab Sunday, assuming gregorian style
     // Get the weekday component of the current date
-    NSDateComponents *weekdayComponents = [calendar components:NSWeekdayCalendarUnit fromDate:self];
+    NSDateComponents *weekdayComponents = [calendar components:NSCalendarUnitWeekday fromDate:self];
     /*
      Create a date components to represent the number of days to subtract from the current date.
      The weekday value for Sunday in the Gregorian calendar is 1, so subtract 1 from the number of days to subtract from the date in question.  (If today's Sunday, subtract 0 days.)

@@ -10,9 +10,11 @@
 
 
 #import <Foundation/Foundation.h>
-#import "FMDatabaseQueue.h"
-#import "FMDatabase.h"
-#import "WOrmProtocol.h"
+//#import "WOrmProtocol.h"
+#import <WCoreKit/WOrmProtocol.h>
+#import <FMDB/FMDatabaseQueue.h>
+#import <FMDB/FMDatabase.h>
+
 
 typedef NS_ENUM(NSInteger, TypeObjectForArrAndDic)
 {

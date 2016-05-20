@@ -5,6 +5,8 @@ target 'WCoreKit_Example' do
   pod "WCoreKit", :path => "../"
 end
 
+
+
 #target 'WCoreKit_Tests', :exclusive => true do
 #  pod "WCoreKit", :path => "../"
 #

@@ -56,28 +56,31 @@ Pod::Spec.new do |s|
         wOrmManager.dependency 'WCoreKit/WRuntimeKit'
     end
 
-    s.subspec 'WServiceForDatabase' do |wServiceForDatabase|
-        wServiceForDatabase.source_files = 'Pod/Classes/WServiceForDatabase/**/*'
-        wServiceForDatabase.public_header_files = 'Pod/Classes/WServiceForDatabase/**/*.h'
-        wServiceForDatabase.dependency 'WCoreKit/WOrmManager'
-        wServiceForDatabase.dependency 'FMDB'
-    end
-
-#    s.subspec 'WAlertController' do |sp|
-#        sp.source_files = 'Pod/Classes/WAlertController/**/*'
-#        sp.public_header_files = 'Pod/Classes/WAlertController/**/*.h'
-#    end
-
-    s.subspec 'WNavigationBarTool' do |sp|
-        sp.source_files = 'Pod/Classes/WNavigationBarTool/**/*'
-        sp.public_header_files = 'Pod/Classes/WNavigationBarTool/**/*.h'
-    end
+s.subspec 'WNavigationBarTool' do |sp|
+       sp.source_files = 'Pod/Classes/WNavigationBarTool/**/*'
+       sp.public_header_files = 'Pod/Classes/WNavigationBarTool/**/*.h'
+   end
 
 s.subspec 'WImageBannerView' do |sp|
 sp.source_files = 'Pod/Classes/WImageBannerView/**/*'
 sp.public_header_files = 'Pod/Classes/WImageBannerView/**/*.h'
 sp.dependency 'SDWebImage'
 end
+
+s.subspec 'WServiceForDatabase' do |sp|
+sp.source_files = 'Pod/Classes/WServiceForDatabase/**/*'
+sp.public_header_files = 'Pod/Classes/WServiceForDatabase/**/*.h'
+sp.dependency 'WCoreKit/WOrmManager'
+sp.dependency 'FMDB'
+end
+
+
+
+
+
+
+
+
 
 
 end
