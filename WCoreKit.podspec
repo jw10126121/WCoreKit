@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.2.3"
+  s.version          = "0.2.4"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/jw10126121/WCoreKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "linjiawei" => "10126121@qq.com" }
+  s.author           = { "linjw" => "10126121@qq.com" }
   s.source           = { :git => "https://github.com/jw10126121/WCoreKit.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -56,23 +56,23 @@ Pod::Spec.new do |s|
         wOrmManager.dependency 'WCoreKit/WRuntimeKit'
     end
 
-s.subspec 'WNavigationBarTool' do |sp|
+    s.subspec 'WNavigationBarTool' do |sp|
        sp.source_files = 'Pod/Classes/WNavigationBarTool/**/*'
        sp.public_header_files = 'Pod/Classes/WNavigationBarTool/**/*.h'
-   end
+    end
 
-s.subspec 'WImageBannerView' do |sp|
-sp.source_files = 'Pod/Classes/WImageBannerView/**/*'
-sp.public_header_files = 'Pod/Classes/WImageBannerView/**/*.h'
-sp.dependency 'SDWebImage'
-end
+    s.subspec 'WImageBannerView' do |sp|
+        sp.source_files = 'Pod/Classes/WImageBannerView/**/*'
+        sp.public_header_files = 'Pod/Classes/WImageBannerView/**/*.h'
+        sp.dependency 'SDWebImage'
+    end
 
-s.subspec 'WServiceForDatabase' do |sp|
-sp.source_files = 'Pod/Classes/WServiceForDatabase/**/*'
-sp.public_header_files = 'Pod/Classes/WServiceForDatabase/**/*.h'
-sp.dependency 'WCoreKit/WOrmManager'
-sp.dependency 'FMDB'
-end
+    s.subspec 'WServiceForDatabase' do |sp|
+        sp.source_files = 'Pod/Classes/WServiceForDatabase/**/*'
+        sp.public_header_files = 'Pod/Classes/WServiceForDatabase/**/*.h'
+        sp.dependency 'WCoreKit/WOrmManager'
+        sp.dependency 'FMDB'
+    end
 
 
 
