@@ -197,12 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "WCoreKit_Example" */;
 			buildPhases = (
-				20CF0377893A828C5DCC075E /* 📦 Check Pods Manifest.lock */,
+				20CF0377893A828C5DCC075E /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E40561F6921CE7B0ED59347E /* 📦 Embed Pods Frameworks */,
-				EEFA14EDB2A8EA5AB70B01EB /* 📦 Copy Pods Resources */,
+				E40561F6921CE7B0ED59347E /* [CP] Embed Pods Frameworks */,
+				EEFA14EDB2A8EA5AB70B01EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,14 +287,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20CF0377893A828C5DCC075E /* 📦 Check Pods Manifest.lock */ = {
+		20CF0377893A828C5DCC075E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +302,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E40561F6921CE7B0ED59347E /* 📦 Embed Pods Frameworks */ = {
+		E40561F6921CE7B0ED59347E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,14 +317,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCoreKit_Example/Pods-WCoreKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEFA14EDB2A8EA5AB70B01EB /* 📦 Copy Pods Resources */ = {
+		EEFA14EDB2A8EA5AB70B01EB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

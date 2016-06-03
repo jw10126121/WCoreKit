@@ -7,6 +7,7 @@
 
 #import "WImageBannerView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <WCoreKit/NSTimer+WTool.h>
 
 @interface WImageBannerView ()<UIScrollViewDelegate>
 
@@ -31,6 +32,12 @@
 
 
 @implementation WImageBannerView
+
+-(void)dealloc
+{
+    [self stopTimer];
+    self.timer = nil;
+}
 
 #pragma mark - 生命周期
 
@@ -186,10 +193,15 @@
         {
             [self stopTimer];
         }
+        __weak typeof(self) weakSelf = self;
+        self.timer = [NSTimer wTimerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime block:^{
+            __weak typeof(weakSelf) strongSelf = weakSelf;
+            [strongSelf playNextImgView];
+        } repeats:YES];
         
-        self.timer = [NSTimer timerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime
-                                             target:self selector:@selector(playNextImgView)
-                                           userInfo:nil repeats:YES];
+//        self.timer = [NSTimer timerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime
+//                                             target:self selector:@selector(playNextImgView)
+//                                           userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     

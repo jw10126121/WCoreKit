@@ -65,6 +65,7 @@ Pod::Spec.new do |s|
         sp.source_files = 'Pod/Classes/WImageBannerView/**/*'
         sp.public_header_files = 'Pod/Classes/WImageBannerView/**/*.h'
         sp.dependency 'SDWebImage'
+        sp.dependency 'WCoreKit/WToolsKit'
     end
 
     s.subspec 'WServiceForDatabase' do |sp|
