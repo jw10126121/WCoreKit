@@ -46,6 +46,9 @@
     if (self = [super initWithCoder:aDecoder])
     {
         _autoPlayTime = 3;
+        _isCycleScroll = YES;
+        self.placeholderImgFromURL = nil;
+        
     }
     return self;
 }
@@ -54,6 +57,8 @@
 {
     if (self = [super initWithFrame:frame])
     {
+        _isCycleScroll = YES;
+        _autoPlayTime = 3;
         self.placeholderImgFromURL = nil;
         [self awakeFromNib];
         
@@ -96,7 +101,7 @@
     [super layoutSubviews];
     
     self.showSV.frame = self.bounds;
-//    CGSize svSize = self.showSV.frame.size;
+    //    CGSize svSize = self.showSV.frame.size;
     //    for (NSInteger i = 0; i < self.imgVs.count; i ++)
     //    {
     //        self.imgVs[i].frame = (CGRect){i * svSize.width,0,svSize};
@@ -113,15 +118,15 @@
      !self.didShowCurrentHandle ?: self.didShowCurrentHandle(self.index);
      }
      */
-//    if (self.isVerticalScroll)
-//    {
-//        self.showSV.contentSize = (CGSize){svSize.width,svSize.height* self.imgVs.count};
-//        self.showSV.contentOffset = CGPointMake(0,svSize.height * 1);//设置初始偏移量
-//    }else
-//    {
-//        self.showSV.contentSize = (CGSize){svSize.width * self.imgVs.count,svSize.height};
-//        self.showSV.contentOffset = CGPointMake(svSize.width * 1, 0);//设置初始偏移量
-//    }
+    //    if (self.isVerticalScroll)
+    //    {
+    //        self.showSV.contentSize = (CGSize){svSize.width,svSize.height* self.imgVs.count};
+    //        self.showSV.contentOffset = CGPointMake(0,svSize.height * 1);//设置初始偏移量
+    //    }else
+    //    {
+    //        self.showSV.contentSize = (CGSize){svSize.width * self.imgVs.count,svSize.height};
+    //        self.showSV.contentOffset = CGPointMake(svSize.width * 1, 0);//设置初始偏移量
+    //    }
     
 }
 
@@ -142,29 +147,25 @@
     //    self.isLastFrame = YES;
 }
 
+-(void)reloadDataWithCurrent:(NSInteger)currentIndex
+{
+    currentIndex = MAX(0, MIN(currentIndex, self.images.count-1));
+    NSInteger index = self.index;
+    self.index = currentIndex;
+    [self configAllDataWithCurrentIndex:self.index];
+    
+    if (index != self.index)
+    {
+        !self.didShowCurrentHandle ?: self.didShowCurrentHandle(self.index);
+    }
+    
+    self.autoPlayTime = self.autoPlayTime;
+}
 
 -(void)reloadData
 {
-    /*
-     for (NSInteger i = 0; i < self.imgVs.count; i ++)
-     {
-     //初始化数据
-     if (i == 0)
-     {
-     [self configDataToImgV:self.imgVs[i] data:self.images.lastObject];
-     }else if (i == 1)
-     {
-     [self configDataToImgV:self.imgVs[i] data:self.images.firstObject];
-     }else if (i == 2)
-     {
-     id data = self.images.count > 1 ? self.images[1] : self.images.lastObject;
-     [self configDataToImgV:self.imgVs[i] data:data];
-     }
-     }
-     */
-    self.index = 0;
-    [self configAllDataWithCurrentIndex:self.index];
-    self.autoPlayTime = self.autoPlayTime;
+    
+    [self reloadDataWithCurrent:self.currentIndex];
     
 }
 
@@ -196,12 +197,13 @@
         __weak typeof(self) weakSelf = self;
         self.timer = [NSTimer wTimerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime block:^{
             __weak typeof(weakSelf) strongSelf = weakSelf;
+            strongSelf.isCycleScroll = YES;
             [strongSelf playNextImgView];
         } repeats:YES];
         
-//        self.timer = [NSTimer timerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime
-//                                             target:self selector:@selector(playNextImgView)
-//                                           userInfo:nil repeats:YES];
+        //        self.timer = [NSTimer timerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime
+        //                                             target:self selector:@selector(playNextImgView)
+        //                                           userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     
@@ -230,14 +232,14 @@
 }
 
 /*
--(void)configDataToImgV:(UIImageView *)imageView index:(NSInteger)index
-{
-    if (self.configImgHandle)
-    {
-        self.configImgHandle(imageView,index);
-    }
-}
-*/
+ -(void)configDataToImgV:(UIImageView *)imageView index:(NSInteger)index
+ {
+ if (self.configImgHandle)
+ {
+ self.configImgHandle(imageView,index);
+ }
+ }
+ */
 
 -(void)configDataToImgV:(UIImageView *)imageView data:(id)data
 {
@@ -314,6 +316,43 @@
     if (scrollView == self.showSV)
     {
         CGSize svSize = scrollView.frame.size;
+        
+        if (self.isCycleScroll == NO)
+        {
+            if (self.isVerticalScroll)
+            {
+                if (scrollView.contentOffset.y < svSize.height  && self.index == 0)
+                {
+                    scrollView.scrollEnabled = NO;
+                    scrollView.contentOffset = CGPointMake(0, svSize.height);
+                    scrollView.scrollEnabled = YES;
+                    return;
+                }else if (scrollView.contentOffset.y > svSize.height && self.index == (self.images.count-1))
+                {
+                    scrollView.scrollEnabled = NO;
+                    scrollView.contentOffset = CGPointMake(0, svSize.height);
+                    scrollView.scrollEnabled = YES;
+                    return;
+                }
+                
+            }else
+            {
+                if (scrollView.contentOffset.x < svSize.width  && self.index == 0)
+                {
+                    scrollView.scrollEnabled = NO;
+                    scrollView.contentOffset = CGPointMake(svSize.width, 0);
+                    scrollView.scrollEnabled = YES;
+                    return;
+                }else if (scrollView.contentOffset.x > svSize.width && self.index == (self.images.count-1))
+                {
+                    scrollView.scrollEnabled = NO;
+                    scrollView.contentOffset = CGPointMake(svSize.width, 0);
+                    scrollView.scrollEnabled = YES;
+                    return;
+                }
+            }
+        }
+        
         if (self.isVerticalScroll)
         {
             // 右滑,下一个
@@ -350,7 +389,7 @@
         }else
         {
             // 右滑,下一个
-            if (scrollView.contentOffset.x >= svSize.width * ([self midIndexWithCount:self.images.count]+1))
+            if (scrollView.contentOffset.x == svSize.width * ([self midIndexWithCount:self.images.count]+1))
             {
                 //如果是最后一个，就设置为下一个序号=0,否则下一个序号+1
                 if (self.index == self.images.count - 1)
@@ -366,7 +405,7 @@
                 !self.didShowCurrentHandle ?: self.didShowCurrentHandle(self.index);
                 
             }  //左滑，上一个
-            else if(scrollView.contentOffset.x <= ([self midIndexWithCount:self.images.count]-1))
+            else if(scrollView.contentOffset.x == ([self midIndexWithCount:self.images.count]-1))
             {
                 if (self.index == 0)
                 {
@@ -432,11 +471,20 @@
     {
         _images = images;
         
-        [self reloadData];
+        //        [self reloadData];
     }
     
 }
 
+-(void)setCurrentIndex:(NSInteger)currentIndex
+{
+    [self reloadDataWithCurrent:currentIndex];
+}
+
+-(NSInteger)currentIndex
+{
+    return self.index;
+}
 
 -(void)setIsVerticalScroll:(BOOL)isVerticalScroll
 {
@@ -453,7 +501,7 @@
         }
         self.imgVs[i].tag = i + 1000;
     }
-
+    
     if (self.isVerticalScroll)
     {
         self.showSV.contentSize = (CGSize){svSize.width,svSize.height* self.imgVs.count};

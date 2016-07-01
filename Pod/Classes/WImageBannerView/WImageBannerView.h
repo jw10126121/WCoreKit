@@ -11,9 +11,8 @@ IB_DESIGNABLE
 
 
 typedef void(^WImageBannerViewClickCurrent)(NSInteger index);
-typedef void(^WImageBannerViewWillShowCurrent)(NSInteger index);
+typedef BOOL(^WImageBannerViewWillShowCurrent)(NSInteger index);
 typedef void(^WImageBannerViewDidShowCurrent)(NSInteger index);
-//typedef id(^WImageBannerViewConfigImg)(UIImageView * imgV,NSInteger index);
 
 /**
  *  广告轮播图
@@ -22,6 +21,9 @@ typedef void(^WImageBannerViewDidShowCurrent)(NSInteger index);
 
 //图片信息,可以是UIImage或NSString或NSURL
 @property(nonatomic,strong)NSArray * images;
+
+//当前滚动索引
+@property(nonatomic,assign)NSInteger currentIndex;
 
 //自动滚动的时间,当<=0时，不自动滚动,默认 3s
 @property(nonatomic,assign)IBInspectable CGFloat autoPlayTime;
@@ -32,8 +34,13 @@ typedef void(^WImageBannerViewDidShowCurrent)(NSInteger index);
 //网络请求时的占位图
 @property(nonatomic,strong)IBInspectable UIImage * placeholderImgFromURL;
 
+//是否循环引用
+@property(nonatomic,assign)BOOL isCycleScroll;
+
 //重新加载数据
 -(void)reloadData;
+
+
 
 
 //点击
