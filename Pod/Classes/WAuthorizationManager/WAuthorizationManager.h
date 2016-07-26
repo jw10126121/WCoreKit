@@ -4,6 +4,7 @@
 //  Created by Linjw on 16/7/26.
 //  Copyright © 2016年 Linjw. All rights reserved.
 //
+//  参考 DLPhotoPicker
 
 #import <Foundation/Foundation.h>
 
