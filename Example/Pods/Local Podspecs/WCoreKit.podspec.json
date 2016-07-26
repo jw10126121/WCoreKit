@@ -67,6 +67,11 @@
 
         ]
       }
+    },
+    {
+      "name": "WAuthorizationManager",
+      "source_files": "Pod/Classes/WAuthorizationManager/**/*",
+      "public_header_files": "Pod/Classes/WAuthorizationManager/**/*.h"
     }
   ]
 }
