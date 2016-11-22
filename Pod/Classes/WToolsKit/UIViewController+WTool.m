@@ -27,7 +27,7 @@ NSString const * __NavBackBtnDoneBackBlkKey__ = @"__NavBackBtnDoneBackBlkKey__";
 
 @implementation UIViewController (WTool)
 
-
+/*
 #pragma mark - 把导航条的旋转方向与他的topViewController保持一致
 - (BOOL)shouldAutorotate
 {
@@ -48,6 +48,7 @@ NSString const * __NavBackBtnDoneBackBlkKey__ = @"__NavBackBtnDoneBackBlkKey__";
     }
     return UIInterfaceOrientationMaskAll;
 }
+*/
 
 
 #pragma mark - NavigationController Or NavigationBar

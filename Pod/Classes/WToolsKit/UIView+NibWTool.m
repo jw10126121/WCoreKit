@@ -134,6 +134,12 @@ static char kUIViewNibLoading_outletsKey;
     NSMutableDictionary * outlets = objc_getAssociatedObject(self, &kUIViewNibLoading_outletsKey);
     if ([outlets isKindOfClass:[NSMutableDictionary class]] && key) outlets[key] = value;
     [super setValue:value forKey:key];
+    
+    
+    
+    
+    
+    
 }
 
 /**

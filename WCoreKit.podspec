@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.2.5"
+  s.version          = "0.2.6"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 #  }
 # s.public_header_files = 'Pod/Classes/**/*.h'
 # s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'AFNetworking', '~> 2.3'
+# s.dependency 'AFNetworking', '~> 3.0'
 
     s.subspec 'WToolsKit' do |wToolsKit|
         wToolsKit.source_files = 'Pod/Classes/WToolsKit/**/*'
