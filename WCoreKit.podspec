@@ -80,6 +80,7 @@ Pod::Spec.new do |s|
 #        sp.source_files = 'Pod/Classes/WAuthorizationManager/**/*'
 #        sp.public_header_files = 'Pod/Classes/WAuthorizationManager/**/*.h'
 #    end
+#
 
 
 
