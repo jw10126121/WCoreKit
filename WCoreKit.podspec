@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.2.6"
+  s.version          = "0.2.7"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -76,10 +76,10 @@ Pod::Spec.new do |s|
     end
 
 
-    s.subspec 'WAuthorizationManager' do |sp|
-        sp.source_files = 'Pod/Classes/WAuthorizationManager/**/*'
-        sp.public_header_files = 'Pod/Classes/WAuthorizationManager/**/*.h'
-    end
+#    s.subspec 'WAuthorizationManager' do |sp|
+#        sp.source_files = 'Pod/Classes/WAuthorizationManager/**/*'
+#        sp.public_header_files = 'Pod/Classes/WAuthorizationManager/**/*.h'
+#    end
 
 
 

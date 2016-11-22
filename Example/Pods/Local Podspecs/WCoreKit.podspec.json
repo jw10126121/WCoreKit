@@ -1,6 +1,6 @@
 {
   "name": "WCoreKit",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "summary": "一些方便开发的IOS工具类",
   "description": "本人自己用的一些关于IOS开发的工具",
   "homepage": "https://github.com/jw10126121/WCoreKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/jw10126121/WCoreKit.git",
-    "tag": "0.2.5"
+    "tag": "0.2.6"
   },
   "platforms": {
     "ios": "7.0"
@@ -67,11 +67,6 @@
 
         ]
       }
-    },
-    {
-      "name": "WAuthorizationManager",
-      "source_files": "Pod/Classes/WAuthorizationManager/**/*",
-      "public_header_files": "Pod/Classes/WAuthorizationManager/**/*.h"
     }
   ]
 }

@@ -5,39 +5,37 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
-  - WCoreKit (0.2.5):
-    - WCoreKit/WAuthorizationManager (= 0.2.5)
-    - WCoreKit/WImageBannerView (= 0.2.5)
-    - WCoreKit/WNavigationBarTool (= 0.2.5)
-    - WCoreKit/WOrmManager (= 0.2.5)
-    - WCoreKit/WRuntimeKit (= 0.2.5)
-    - WCoreKit/WServiceForDatabase (= 0.2.5)
-    - WCoreKit/WToolsKit (= 0.2.5)
-  - WCoreKit/WAuthorizationManager (0.2.5)
-  - WCoreKit/WImageBannerView (0.2.5):
+  - WCoreKit (0.2.6):
+    - WCoreKit/WImageBannerView (= 0.2.6)
+    - WCoreKit/WNavigationBarTool (= 0.2.6)
+    - WCoreKit/WOrmManager (= 0.2.6)
+    - WCoreKit/WRuntimeKit (= 0.2.6)
+    - WCoreKit/WServiceForDatabase (= 0.2.6)
+    - WCoreKit/WToolsKit (= 0.2.6)
+  - WCoreKit/WImageBannerView (0.2.6):
     - SDWebImage
     - WCoreKit/WToolsKit
-  - WCoreKit/WNavigationBarTool (0.2.5)
-  - WCoreKit/WOrmManager (0.2.5):
+  - WCoreKit/WNavigationBarTool (0.2.6)
+  - WCoreKit/WOrmManager (0.2.6):
     - WCoreKit/WRuntimeKit
-  - WCoreKit/WRuntimeKit (0.2.5)
-  - WCoreKit/WServiceForDatabase (0.2.5):
+  - WCoreKit/WRuntimeKit (0.2.6)
+  - WCoreKit/WServiceForDatabase (0.2.6):
     - FMDB
     - WCoreKit/WOrmManager
-  - WCoreKit/WToolsKit (0.2.5)
+  - WCoreKit/WToolsKit (0.2.6)
 
 DEPENDENCIES:
   - WCoreKit (from `../`)
 
 EXTERNAL SOURCES:
   WCoreKit:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  WCoreKit: f00bc42932e95becda539ff82be33b3e4279059f
+  WCoreKit: 897a7859d9a21536dee8b28422147fde2cf0dbec
 
 PODFILE CHECKSUM: 09aa04e1f16c6386cab138623b43189cffab75b7
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
