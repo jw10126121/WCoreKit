@@ -311,6 +311,10 @@ NSString * wApiWithParams(NSString * domain,NSDictionary * params)
  */
 NSString * wApiGetFullURL(NSString * aApiDomain,NSString * path)
 {
+    if (!aApiDomain || !path)
+    {
+        return [NSString stringWithFormat:@"%@%@",aApiDomain?:@"",path?:@""];
+    }
     NSString * theApiDomain = [aApiDomain hasSuffix:@"/"] ? [aApiDomain substringToIndex:aApiDomain.length - 1] : aApiDomain;
     if ([path hasPrefix:theApiDomain])
     {
