@@ -1,28 +1,46 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
-  - WCoreKit (0.2.6):
-    - WCoreKit/WImageBannerView (= 0.2.6)
-    - WCoreKit/WNavigationBarTool (= 0.2.6)
-    - WCoreKit/WOrmManager (= 0.2.6)
-    - WCoreKit/WRuntimeKit (= 0.2.6)
-    - WCoreKit/WServiceForDatabase (= 0.2.6)
-    - WCoreKit/WToolsKit (= 0.2.6)
-  - WCoreKit/WImageBannerView (0.2.6):
+  - WCoreKit (0.2.9):
+    - WCoreKit/WImageBannerView (= 0.2.9)
+    - WCoreKit/WNavigationBarTool (= 0.2.9)
+    - WCoreKit/WOrmManager (= 0.2.9)
+    - WCoreKit/WRuntimeKit (= 0.2.9)
+    - WCoreKit/WServiceForDatabase (= 0.2.9)
+    - WCoreKit/WServiceNetAFN (= 0.2.9)
+    - WCoreKit/WToolsKit (= 0.2.9)
+  - WCoreKit/WImageBannerView (0.2.9):
     - SDWebImage
     - WCoreKit/WToolsKit
-  - WCoreKit/WNavigationBarTool (0.2.6)
-  - WCoreKit/WOrmManager (0.2.6):
+  - WCoreKit/WNavigationBarTool (0.2.9)
+  - WCoreKit/WOrmManager (0.2.9):
     - WCoreKit/WRuntimeKit
-  - WCoreKit/WRuntimeKit (0.2.6)
-  - WCoreKit/WServiceForDatabase (0.2.6):
+  - WCoreKit/WRuntimeKit (0.2.9)
+  - WCoreKit/WServiceForDatabase (0.2.9):
     - FMDB
     - WCoreKit/WOrmManager
-  - WCoreKit/WToolsKit (0.2.6)
+  - WCoreKit/WServiceNetAFN (0.2.9):
+    - AFNetworking
+  - WCoreKit/WToolsKit (0.2.9)
 
 DEPENDENCIES:
   - WCoreKit (from `../`)
@@ -32,10 +50,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  WCoreKit: 897a7859d9a21536dee8b28422147fde2cf0dbec
+  WCoreKit: 76f1d0c9f60755d6bc4211724ded7b1b4b2ab264
 
 PODFILE CHECKSUM: 09aa04e1f16c6386cab138623b43189cffab75b7
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

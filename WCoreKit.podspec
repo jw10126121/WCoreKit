@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WCoreKit"
-  s.version          = "0.2.8"
+  s.version          = "0.2.9"
   s.summary          = "一些方便开发的IOS工具类"
 
 # This description is used to generate tags and improve search results.
@@ -73,6 +73,12 @@ Pod::Spec.new do |s|
         sp.public_header_files = 'Pod/Classes/WServiceForDatabase/**/*.h'
         sp.dependency 'WCoreKit/WOrmManager'
         sp.dependency 'FMDB'
+    end
+
+    s.subspec 'WServiceNetAFN' do |wServiceNetAFN|
+        wServiceNetAFN.source_files = 'Pod/Classes/WServiceNetAFN/**/*'
+        wServiceNetAFN.public_header_files = 'Pod/Classes/WServiceNetAFN/**/*.h'
+        wServiceNetAFN.dependency 'AFNetworking'
     end
 
 
