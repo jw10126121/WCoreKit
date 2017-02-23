@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
         wServiceNetAFN.source_files = 'Pod/Classes/WServiceNetAFN/**/*'
         wServiceNetAFN.public_header_files = 'Pod/Classes/WServiceNetAFN/**/*.h'
         wServiceNetAFN.dependency 'AFNetworking'
-        wOrmManager.dependency 'WCoreKit/WToolsKit'
+        wServiceNetAFN.dependency 'WCoreKit/WToolsKit'
     end
 
 
