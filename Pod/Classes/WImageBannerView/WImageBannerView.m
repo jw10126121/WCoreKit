@@ -195,7 +195,7 @@
             [self stopTimer];
         }
         __weak typeof(self) weakSelf = self;
-        self.timer = [NSTimer wTimerWithTimeInterval:self.autoPlayTime < 1? 3 : self.autoPlayTime block:^{
+        self.timer = [NSTimer wTimerWithTimeInterval:self.autoPlayTime < 1 ? 3 : self.autoPlayTime block:^{
             __weak typeof(weakSelf) strongSelf = weakSelf;
             strongSelf.isCycleScroll = YES;
             [strongSelf playNextImgView];
@@ -389,7 +389,7 @@
         }else
         {
             // 右滑,下一个
-            if (scrollView.contentOffset.x == svSize.width * ([self midIndexWithCount:self.images.count]+1))
+            if (scrollView.contentOffset.x >= svSize.width * ([self midIndexWithCount:self.images.count]+1))
             {
                 //如果是最后一个，就设置为下一个序号=0,否则下一个序号+1
                 if (self.index == self.images.count - 1)
@@ -400,12 +400,13 @@
                     self.index ++;
                 }
                 !self.willShowCurrentHandle ?: self.willShowCurrentHandle(self.index);
-                self.showSV.contentOffset = (CGPoint){svSize.width,0};
                 [self configAllDataWithCurrentIndex:self.index];
+                self.showSV.contentOffset = (CGPoint){svSize.width,0};
+
                 !self.didShowCurrentHandle ?: self.didShowCurrentHandle(self.index);
                 
             }  //左滑，上一个
-            else if(scrollView.contentOffset.x == ([self midIndexWithCount:self.images.count]-1))
+            else if(scrollView.contentOffset.x <= ([self midIndexWithCount:self.images.count]-1))
             {
                 if (self.index == 0)
                 {
@@ -415,8 +416,8 @@
                     self.index --;
                 }
                 !self.willShowCurrentHandle ?: self.willShowCurrentHandle(self.index);
-                self.showSV.contentOffset = (CGPoint){svSize.width,0};
                 [self configAllDataWithCurrentIndex:self.index];
+                self.showSV.contentOffset = (CGPoint){svSize.width,0};
                 !self.didShowCurrentHandle ?: self.didShowCurrentHandle(self.index);
             }
         }

@@ -3,6 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'WCoreKit_Example' do
   pod "WCoreKit", :path => "../"
+  pod 'Masonry'
 end
 
 
