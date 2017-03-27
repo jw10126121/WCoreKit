@@ -34,11 +34,14 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
     return self;
 }
 
--(id)wNetBase:(NSString *)apiStr
-       Params:(NSDictionary *)paramsDic
-   HeadParams:(NSDictionary *)headParamsDic
-   HttpMethod:(HttpMethodType)typeHttpMethod
-       Result:(void(^)(NSError * error,id request, NSData *  responseData))ResultBlk
+
+- (id)wNetBase:(NSString *)apiStr
+  HttpsCerMode:(WHttpsMode)httpsMode
+  HttpsCerData:(NSData *)httpsData
+        Params:(NSDictionary *)paramsDic
+    HeadParams:(NSDictionary *)headParamsDic
+    HttpMethod:(HttpMethodType)httpMethod
+        Result:(void(^)(NSError * error,id request, NSData * responseData))ResultBlk
 {
     apiStr = [apiStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
@@ -50,7 +53,27 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
     //        return nil;
     //    }
     
-    NSString * mothodStr = [[self class] wHttpMethodStrWithType:typeHttpMethod];
+    switch (httpMethod) {
+        case WHttpsModeNoHttps:
+            
+            break;
+        case WHttpsModeNone:
+            manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+            manager.securityPolicy.allowInvalidCertificates = YES;
+            [manager.securityPolicy setValidatesDomainName:NO];
+            break;
+        case WHttpsModeCertificate:
+            manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+            manager.securityPolicy.pinnedCertificates = [[NSSet alloc] initWithObjects:httpsData, nil];
+            manager.securityPolicy.allowInvalidCertificates = YES;
+            [manager.securityPolicy setValidatesDomainName:NO];
+            break;
+        default:
+            break;
+    }
+
+    
+    NSString * mothodStr = [[self class] wHttpMethodStrWithType:httpMethod];
     
     NSMutableURLRequest * request = nil;
     
@@ -74,7 +97,7 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
     }
     //新建request时的超时时间
     manager.requestSerializer.timeoutInterval = 10;
-    if (typeHttpMethod == HttpMethodPost) {
+    if (httpMethod == HttpMethodPost) {
         request = [manager.requestSerializer multipartFormRequestWithMethod:mothodStr
                                                                   URLString:apiStr
                                                                  parameters:theParams
@@ -117,7 +140,7 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
     //        }
     //    }
     //    NSURLSessionDataTask * task = [[NSURLSessionDataTask alloc]init];
-    if (typeHttpMethod == HttpMethodPost)
+    if (httpMethod == HttpMethodPost)
     {
         
         if (files.count)
@@ -171,7 +194,16 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
         return task;
     }
     return nil;
+}
+
+-(id)wNetBase:(NSString *)apiStr
+       Params:(NSDictionary *)paramsDic
+   HeadParams:(NSDictionary *)headParamsDic
+   HttpMethod:(HttpMethodType)typeHttpMethod
+       Result:(void(^)(NSError * error,id request, NSData *  responseData))ResultBlk
+{
     
+    return [self wNetBase:apiStr HttpsCerMode:WHttpsModeNoHttps HttpsCerData:nil Params:paramsDic HeadParams:headParamsDic HttpMethod:typeHttpMethod Result:ResultBlk];
 }
 
 /**
@@ -191,15 +223,36 @@ NSString *const UserDefaultCookieKey      = @"__UserDefaultCookieKey__";
    HttpMethod:(HttpMethodType)typeHttpMethod
        Result:(void(^)(NSError * error,id request,id jsonObj,NSString * responseStr))ResultBlk
 {
+    return [self wNetJson:apiStr HttpsCerMode:WHttpsModeNoHttps HttpsCerData:nil Params:paramsDic HeadParams:headParamsDic HttpMethod:typeHttpMethod Result:ResultBlk];
+}
+
+/**
+ *  网络请求类(基本数据请求),成功返回结果为JSON对象
+ *
+ *  @param apiStr         URL
+ *  @param paramsDic      参数
+ *  @param headParamsDic  头部参数
+ *  @param typeHttpMethod http方法类型
+ *  @param ResultBlk      返回结果Block(state : 错误码)
+ *
+ *  @return 请求类
+ */
+-(id)wNetJson:(NSString *)apiStr
+ HttpsCerMode:(WHttpsMode)httpsMode
+ HttpsCerData:(NSData *)httpsData
+       Params:(NSDictionary *)paramsDic
+   HeadParams:(NSDictionary *)headParamsDic
+   HttpMethod:(HttpMethodType)typeHttpMethod
+       Result:(void(^)(NSError * error,id request,id jsonObj,NSString * responseStr))ResultBlk
+{
     return [self wNetBase:apiStr
+             HttpsCerMode:httpsMode
+             HttpsCerData:httpsData
                    Params:paramsDic
                HeadParams:headParamsDic
                HttpMethod:typeHttpMethod
                    Result:^(NSError * error, id request, id responseObj)
             {
-                
-                //                NSString * requestURL = wApiWithParams(apiStr,paramsDic);
-                //                NSLog(@"----------RequestURL:----------\n%@",requestURL);
                 NSString * responseStr = nil;
                 id jsonObj = nil;
                 if (!error)
