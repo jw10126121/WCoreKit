@@ -21,28 +21,28 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
-  - WCoreKit (0.2.9):
-    - WCoreKit/WImageBannerView (= 0.2.9)
-    - WCoreKit/WNavigationBarTool (= 0.2.9)
-    - WCoreKit/WOrmManager (= 0.2.9)
-    - WCoreKit/WRuntimeKit (= 0.2.9)
-    - WCoreKit/WServiceForDatabase (= 0.2.9)
-    - WCoreKit/WServiceNetAFN (= 0.2.9)
-    - WCoreKit/WToolsKit (= 0.2.9)
-  - WCoreKit/WImageBannerView (0.2.9):
+  - WCoreKit (0.3.1):
+    - WCoreKit/WImageBannerView (= 0.3.1)
+    - WCoreKit/WNavigationBarTool (= 0.3.1)
+    - WCoreKit/WOrmManager (= 0.3.1)
+    - WCoreKit/WRuntimeKit (= 0.3.1)
+    - WCoreKit/WServiceForDatabase (= 0.3.1)
+    - WCoreKit/WServiceNetAFN (= 0.3.1)
+    - WCoreKit/WToolsKit (= 0.3.1)
+  - WCoreKit/WImageBannerView (0.3.1):
     - SDWebImage
     - WCoreKit/WToolsKit
-  - WCoreKit/WNavigationBarTool (0.2.9)
-  - WCoreKit/WOrmManager (0.2.9):
+  - WCoreKit/WNavigationBarTool (0.3.1)
+  - WCoreKit/WOrmManager (0.3.1):
     - WCoreKit/WRuntimeKit
-  - WCoreKit/WRuntimeKit (0.2.9)
-  - WCoreKit/WServiceForDatabase (0.2.9):
+  - WCoreKit/WRuntimeKit (0.3.1)
+  - WCoreKit/WServiceForDatabase (0.3.1):
     - FMDB
     - WCoreKit/WOrmManager
-  - WCoreKit/WServiceNetAFN (0.2.9):
+  - WCoreKit/WServiceNetAFN (0.3.1):
     - AFNetworking
     - WCoreKit/WToolsKit
-  - WCoreKit/WToolsKit (0.2.9)
+  - WCoreKit/WToolsKit (0.3.1)
 
 DEPENDENCIES:
   - Masonry
@@ -57,8 +57,8 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  WCoreKit: f68e811af3e14a86d21de2f8937e09039eff4fe2
+  WCoreKit: ca043f792fc849177cfe2c7053477c0980f82806
 
 PODFILE CHECKSUM: 4ceb493a4e497730f0d26c93539dee0c152f1b5b
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

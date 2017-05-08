@@ -24,7 +24,7 @@ FOUNDATION_EXPORT const unsigned char WToolsVersionString[];
 #import "UIAlertView+WTool.h"
 #import "UIViewController+WTool.h"
 #import "NSDate+WTool.h"
-#import "UIControl+WTool.h"
+//#import "UIControl+WTool.h"
 #import "UIImage+WTool.h"
 #import "UIView+WTool.h"
 #import "WJsonTool.h"
